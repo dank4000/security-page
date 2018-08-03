@@ -28,7 +28,7 @@ All of our services run in the cloud. We don’t host or run our own routers, lo
 Our service is built on  [Heroku](https://www.heroku.com/policy/security), [SendGrid](https://www.sendgrid.com) and [AWS](https://aws.amazon.com/security/). They provide strong security measures to protect our infrastructure and are compliant with most certifications. You can read more about their practices here:
 
 - [AWS](https://aws.amazon.com/security/)
-- [Sendgrid](https://sendgrid.com/policies/security/)
+- [Sendgrid] (https://sendgrid.com/policies/security/)
 - [Heroku](https://www.heroku.com/policy/security)
 
 These data center facilities are protected 24/7 with different security measures (guards, CCTV, electronic access control, etc.). Monitoring and alerting is in place for security breaches, power, HVAC, and temperature.
@@ -71,7 +71,7 @@ Encryption at rest: All our user data (including passwords) is encrypted using b
 
 We retain your usage data for a period of 90 days after your trial. All data is then completely removed from the dashboard and server.
 Every user can request the removal of usage data by contacting support.
-Read more about our [privacy policy](https://reallinks1.s3.amazonaws.com/terms/privacy.pdf).
+Read more about our privacy settings at [DOMAIN/privacy](DOMAIN/privacy).
 
 
 ## Business continuity and disaster recovery
@@ -122,12 +122,59 @@ We develop following security best practices and frameworks (OWASP Top 10, SANS 
 - Developers participate in regular security training to learn about common vulnerabilities and threats
 - We review our code for security vulnerabilities
 - We regularly update our dependencies and make sure none of them has known vulnerabilities
-
 <!--- We use Static Application Security Testing (SAST) to detect basic security vulnerabilities in our codebase
 - We use Dynamic Application Security Testing (DAST) to scan our applications
 - We rely on [yearly | bi-annually | quarterly] third-party security experts to perform penetration tests of our applications.-->
 
+<!--
+## Responsible disclosure
 
+<!--- __Recommended for:__ >Series A/Series B startups. --->
+
+<!--- __Explanation:__ Use this section if you welcome responsible disclosure (you should). It describes your bug bounty policy and coverage. A high proportion of reported issues aren’t relevant, so be sure to have internal security knowledge to triage and respond to reports quickly. It is a best practice to reward security researchers (within the range of possibility for you). --->
+
+<!--- __Customization:__ Low customizations. Adapt the coverage and exclusions, and add the proper contact email or [keybase](https://keybase.io/). Using a hosted public bug bounty program on HackerOne or BugCrowd? Just replace the content of this section with a link to your profile. --->
+
+We encourage everyone that practices responsible disclosure and comply with our policies and terms of service to participate in our bug bounty program.
+Please avoid automated testing and only perform security testing with your own data. Please do not disclose any information regarding the vulnerabilities until we fix them. Rewards are done at our discretion depending on the criticality of the vulnerability reported.
+
+You can report vulnerabilities by contacting [security@DOMAIN](mailto:security@DOMAIN). Please include a proof of concept. We will respond as quickly as possible to your submission and won’t take legal actions if you follow the rules.
+
+**Coverage**
+- *.DOMAIN
+
+**Exclusions**
+- blog.DOMAIN
+- docs.DOMAIN
+- status.DOMAIN
+- support.DOMAIN
+
+**Accepted vulnerabilities are the following:**
+- Cross-Site Scripting (XSS)
+- Open redirect
+- Cross-site Request Forgery (CSRF)
+- Command/File/URL inclusion
+- Authentication issues
+- Code execution
+- Code or database injections
+
+**This bug bounty program does NOT include:**
+- Logout CSRF
+- Account/email enumerations
+- Denial of Service (DoS)
+- Attacks that could harm the reliability/integrity of our business
+- Spam attacks
+- Clickjacking on pages without authentication and/or sensitive state changes
+- Mixed content warnings
+- Lack of DNSSEC
+- Content spoofing / text injection
+- Timing attacks
+- Social engineering
+- Phishing
+- Insecure cookies for non-sensitive cookies or 3rd party cookies
+- Vulnerabilities requiring exceedingly unlikely user interaction
+- Exploits that require physical access to a user's machine
+-->
 ## User protection
 
 <!--- __Recommended for:__ >Series A/Series B startups or earlier if you handle medical/financial data or have enterprise customers.  --->
@@ -136,20 +183,19 @@ We develop following security best practices and frameworks (OWASP Top 10, SANS 
 
 <!--- __Customization:__ Customization needed. Delete the features your product doesn’t offer and add more detail.  --->
 
-<!--**2-factor authentication**
+**2-factor authentication**
 
 We provide a 2-factor authentication mechanism to protect our users from account takeover attacks. Setting up this extra security measure is optional but highly recommended to increase the security of sensitive data.
--->
+
 **Account takeover protection**
 
 We protect our users against data breaches by monitoring and blocking brute force attacks.
 
-
-<!--**Single sign-on**
+**Single sign-on**
 
 Single sign-on (SSO) is offered for our enterprise customers.
 Single sign-on (SSO) is available using your Google account.
--->
+
 **Role-based access control**
 
 Role-based access control (RBAC) is offered on all our accounts and allows our users to define roles and permissions.
@@ -161,7 +207,7 @@ Role-based access control (RBAC) is offered on all our accounts and allows our u
 
 <!--- __Customization:__ Very customizable. Choose the elements you’re compliant to. Do not hesitate to link to other pages or resources that detail more your compliance.  --->
 
-<!--**HIPAA**
+**HIPAA**
 
 - Our company is compliant with the Health Insurance Portability and Accountability Act of 1996 (HIPAA). We protect the privacy and security of your protected health information (PHI) in accordance with the very strict requirements of [HIPAA](https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/index.html),
 - Our company offers HIPAA BAA agreements to enterprise companies that need to comply with HIPAA regulations.
@@ -176,18 +222,28 @@ Our company conforms with the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks f
 
 **PCI Compliance**
 
-We process and store your payment information in accordance with the Payment Card Industry Data Security Standards ([PCI DSS](https://www.pcisecuritystandards.org/)). We have been audited by an independent PCI Qualified Security Assessor (QSA) and are certified as a PCI Service Provider.-->
-<!--
+We process and store your payment information in accordance with the Payment Card Industry Data Security Standards ([PCI DSS](https://www.pcisecuritystandards.org/)). We have been audited by an independent PCI Qualified Security Assessor (QSA) and are certified as a PCI Service Provider.
+
 **ISO 27001**
 
-Our company is [ISO/IEC 27001](https://en.wikipedia.org/wiki/ISO/IEC_27001) certified. This standard provides a framework for establishing, and maintaining an information security management system (ISMS) to secure sensitive information through a risk management process that combines IT systems, people and processes.-->
+Our company is [ISO/IEC 27001](https://en.wikipedia.org/wiki/ISO/IEC_27001) certified. This standard provides a framework for establishing, and maintaining an information security management system (ISMS) to secure sensitive information through a risk management process that combines IT systems, people and processes.
 
 **GDPR**
 
-We’re compliant to the General Data Protection Regulation (GDPR). The purpose of GDPR is to protect the private information of EU citizens and give them more control over their personal data. Please read our [privacy policy](https://reallinks1.s3.amazonaws.com/terms/privacy.pdf) for more information
+We’re compliant to the General Data Protection Regulation (GDPR). The purpose of GDPR is to protect the private information of EU citizens and give them more control over their personal data. Contact us for more details on how we comply to GDPR.
 
+## Payment information
 
-## Access
+<!--- __Recommended for:__ All companies accepting payments. --->
+
+<!--- __Explanation:__ Add this section to your overview to state your security practices regarding payment processing and storage. If you use a third-party to handle payments mention it and state that you are therefore not subject to PCI compliance. If you process payments yourself, keep the part on PCI compliance. --->
+
+<!--- __Customization:__ Delete the paragraph that isn’t relevant to your company. Choose or add your payment provider. --->
+
+- All payment instrument processing is safely outsourced to [Stripe | Braintree] which is certified as a PCI Level 1 Service Provider. We don’t collect any payment information and are therefore not subject to PCI obligations.
+- We safely process and store your payment information following the strict Payment Card Industry Data Security Standards (PCI DSS). We are certified as a PCI Service Provider.
+
+## Employee access
 
 <!--- __Recommended for:__ >Series A/Series B. --->
 
@@ -197,4 +253,3 @@ We’re compliant to the General Data Protection Regulation (GDPR). The purpose 
 
 - Our strict internal procedure prevents any employee or administrator from gaining access to user data. Limited exceptions can be made for customer support.
 - All our employees sign a Non-Disclosure and Confidentiality Agreement when joining the company to protect our customers' sensitive information.
-- All visitors to our site are signed in, prior to access to the office area.
